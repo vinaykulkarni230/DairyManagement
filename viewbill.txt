@@ -1,0 +1,3 @@
+create view viewbill as
+select cu.name, co.* 
+from (customer cu join collection co on cu.ssn = co.ssn);
